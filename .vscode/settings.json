@@ -1,5 +1,5 @@
 {
- //"terminal.integrated.defaultProfile.windows": "Git Bash",
+ "terminal.integrated.defaultProfile.windows": "Git Bash",
  // Platform settings
  "BOARD": "nrf52dk_nrf52832",
  "DEVICE": "nrf52",
