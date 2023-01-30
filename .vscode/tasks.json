@@ -1,0 +1,28 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format    
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build",
+			"type": "shell",
+			"group": "build",
+			"command": "source scripts/build.sh ${config:ZEPHYR_WORK_DIR} ${config:BOARD} ${config:ZEPHYR_APP_DIR}",
+			"problemMatcher": []
+		},
+		{
+			"label": "Clean",
+			"type": "shell",
+			"group": "build",
+			"command": "source scripts/clean.sh",
+			"problemMatcher": []
+		},
+		{
+			"label": "Flash",
+			"type": "shell",
+			"group": "build",
+			"command": "source scripts/flash.sh ${config:ZEPHYR_WORK_DIR}",
+			"problemMatcher": []
+		}				
+	]
+}

@@ -1,0 +1,14 @@
+{
+ "terminal.integrated.defaultProfile.windows": "Git Bash",
+ // Platform settings
+ "BOARD": "nrf52dk_nrf52832",
+ "DEVICE": "nrf52",
+ "SVD_FILE": "E:/Workspace/Firmware/Zephyr/zephyrproject/modules/hal/nordic/nrfx/mdk/nrf52833.svd",
+ // Zephyr toolchains
+ "TOOLCHAINS_DIR": "E:/Workspace/Firmware/Zephyr/zephyr-sdk-0.15.2",
+ // Zephyr environment
+ "ZEPHYR_WORK_DIR": "E:/Workspace/Firmware/Zephyr/zephyrproject",
+ "ZEPHYR_APP_DIR": "E:/Workspace/Firmware/Zephyr/zephyrproject/zephyr/samples/bluetooth/broadcaster",
+ // Debugging interface
+ "GDB_SEVER_PATH": "C:/Program Files/SEGGER/JLink/JLinkGDBServerCL.exe",
+}
