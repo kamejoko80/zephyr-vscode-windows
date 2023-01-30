@@ -4,6 +4,13 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
+			"label": "Config",
+			"type": "shell",
+			"group": "build",
+			"command": "source scripts/guiconfig.sh ${config:ZEPHYR_WORK_DIR} ${config:BOARD} ${config:ZEPHYR_APP_DIR}",
+			"problemMatcher": []
+		},		
+		{
 			"label": "Build",
 			"type": "shell",
 			"group": "build",

@@ -9,5 +9,5 @@
 export ZEPHYR_BASE=$1/zephyr
 source $1/.venv/Scripts/activate
 rm -rf build
-west build -p always -b $2 -s $3
+west build -t guiconfig -b $2 -s $3
 
