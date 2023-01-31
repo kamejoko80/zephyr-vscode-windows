@@ -8,7 +8,7 @@
  "TOOLCHAINS_DIR": "E:/Workspace/Firmware/Zephyr/zephyr-sdk-0.15.2",
  // Zephyr environment
  "ZEPHYR_WORK_DIR": "E:/Workspace/Firmware/Zephyr/zephyrproject",
- "ZEPHYR_APP_DIR": "apps/broadcaster",
+ "ZEPHYR_APP_DIR": "apps/threads",
  // Debugging interface
  "GDB_SEVER_PATH": "C:/Program Files/SEGGER/JLink/JLinkGDBServerCL.exe",
 }
