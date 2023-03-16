@@ -7,7 +7,6 @@
         {
             "name": "Cortex Debug",
             "cwd": "${workspaceFolder}",
-            "searchDir":  ["${ZEPHYR_WORK_DIR}/zephyr"],
             "armToolchainPath": "${config:TOOLCHAINS_DIR}/arm-zephyr-eabi/bin",            
             "gdbPath":"${config:TOOLCHAINS_DIR}/arm-zephyr-eabi/bin/arm-zephyr-eabi-gdb.exe",
             "toolchainPrefix": "arm-zephyr-eabi",
@@ -16,8 +15,21 @@
             "type": "cortex-debug",
             "device": "${config:DEVICE}",
             "svdFile": "${config:SVD_FILE}",
-            "serverpath": "${config:GDB_SEVER_PATH}",
-            "servertype": "jlink",
+            "searchDir":  [
+                "${config:OPENOCD_SEVER_PATH}/share/openocd/scripts"
+            ],            
+            "configFiles": [
+				"board/stm32mp15x_dk2.cfg"
+			],
+            "preLaunchCommands": [
+                "monitor reset init"
+            ],
+            "postLaunchCommands": [
+                "monitor reset init",
+                "monitor sleep 200"
+            ],            
+            "serverpath": "${config:OPENOCD_SEVER_PATH}/bin/openocd.exe",
+            "servertype": "openocd",
             "interface": "swd",
             //"runToEntryPoint": "__start",
             "runToEntryPoint": "main",
