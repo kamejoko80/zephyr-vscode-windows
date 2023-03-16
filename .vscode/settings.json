@@ -1,14 +1,14 @@
 {
  "terminal.integrated.defaultProfile.windows": "Git Bash",
  // Platform settings
- "BOARD": "nrf52dk_nrf52832",
+ "BOARD": "nrf52840dk_nrf52840",
  "DEVICE": "nrf52",
  "SVD_FILE": "E:/Workspace/Firmware/Zephyr/zephyrproject/modules/hal/nordic/nrfx/mdk/nrf52833.svd",
  // Zephyr toolchains
  "TOOLCHAINS_DIR": "E:/Workspace/Firmware/Zephyr/zephyr-sdk-0.15.2",
  // Zephyr environment
  "ZEPHYR_WORK_DIR": "E:/Workspace/Firmware/Zephyr/zephyrproject",
- "ZEPHYR_APP_DIR": "apps/sdk-uwb-zephyr/samples/03_twr_initiator",
+ "ZEPHYR_APP_DIR": "../zephyrproject/zephyr/samples/basic/blinky",
  // Debugging interface
  "GDB_SEVER_PATH": "C:/Program Files/SEGGER/JLink/JLinkGDBServerCL.exe",
 }
